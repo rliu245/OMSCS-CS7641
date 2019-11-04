@@ -201,7 +201,7 @@ def compute_neural_network(a, b):
     important_features = ['CGPA', 'GRE Score', 'TOEFL Score']
     temp_data = dict()
     for feature in important_features:
-        temp_data[feature] = a[feature]
+        temp_data[feature] = a[0][feature]
     
     temp = pd.DataFrame(temp_data)
     
@@ -224,7 +224,7 @@ def compute_neural_network(a, b):
     important_features = ['fnlwgt', 'age', 'education-num']
     temp_data = dict()
     for feature in important_features:
-        temp_data[feature] = b[feature]
+        temp_data[feature] = b[0][feature]
     
     temp = pd.DataFrame(temp_data)
     
